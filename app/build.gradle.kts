@@ -61,7 +61,6 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
     implementation ("javax.inject:javax.inject:1")
 
     //Retrofit
@@ -72,18 +71,21 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.8")
 
     //Dagger - Hilt
-
     implementation ("com.google.dagger:hilt-android:2.51")
     kapt ("com.google.dagger:hilt-android-compiler:2.51")
-    //implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt ("androidx.hilt:hilt-compiler:1.0.0")
     implementation ("androidx.hilt:hilt-navigation-compose:1.0.0-alpha03")
 
-    /*implementation("com.google.dagger:hilt-android:2.51.1")
-    annotationProcessor("com.google.dagger:hilt-android-compiler:2.51.1")
-    annotationProcessor  ("androidx.hilt:hilt-compiler:1.0.0")
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-*/
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // Material 3
+    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.compose.material:material-icons-extended:1.6.2")
+
+    // Fonts
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.8")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
